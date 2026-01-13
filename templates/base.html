@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="container">
+    <div class="site-header">
+      <div class="site-title">Markdown Dokumentation</div>
+      <div class="page-title">{{ title }}</div>
+      {% if date %}
+      <div class="meta">Stand: {{ date }}</div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="container layout">
+    <aside class="sidebar">
+      <div class="nav-title">Navigation</div>
+      <nav>
+        <ul class="nav-list">
+          {% for item in navigation %}
+            <li class="{% if item.active %}active{% endif %}">
+              <a href="{{ item.href }}">{{ item.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      {{ content | safe }}
+    </main>
+  </div>
+
+  <footer class="container">
+    <div class="site-footer">
+      <div>Generiert mit Markdown → HTML Generator</div>
+      {% if version %}
+      <div>Version: {{ version }}</div>
+      {% endif %}
+    </div>
+  </footer>
+
+</body>
+</html>
