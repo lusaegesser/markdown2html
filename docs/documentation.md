@@ -10,3 +10,5 @@ Diese Seite dient dazu, den vollständigen Build- und Deployment-Prozess
 - Markdown wird automatisch gelesen
 - HTML wird generiert
 - GitHub Pages wird aktualisiert
+
+Dokumentation wurde Deployed!
