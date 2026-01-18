@@ -79,6 +79,7 @@ Es ist keine lokale Installation von Python oder Abhängigkeiten notwendig.
 
 ## Architekturübersicht
 
+```mermaid
 flowchart LR
     A[Markdown-Dateien<br/>docs/] --> B[Markdown Reader]
     B --> C[Markdown Converter]
@@ -86,6 +87,7 @@ flowchart LR
     D --> E[Statische HTML-Seiten<br/>dist/]
     E --> F[GitHub Actions]
     F --> G[GitHub Pages]
+```
 
 ## Abhängigkeiten
 
