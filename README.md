@@ -1,5 +1,7 @@
 # Markdown2HTML – Automatischer Markdown → HTML Dokumentationsgenerator
 
+![Markdown2HTML](images/mdtohtml.png)
+
 ## Projektbeschreibung
 
 Markdown2HTML ist ein leichtgewichtiges Tool zur automatischen Konvertierung von Markdown-Dateien in eine statische HTML-Dokumentation.  
@@ -79,15 +81,7 @@ Es ist keine lokale Installation von Python oder Abhängigkeiten notwendig.
 
 ## Architekturübersicht
 
-```mermaid
-flowchart LR
-    A[Markdown-Dateien<br/>docs/] --> B[Markdown Reader]
-    B --> C[Markdown Converter]
-    C --> D[Jinja2 Templates]
-    D --> E[Statische HTML-Seiten<br/>dist/]
-    E --> F[GitHub Actions]
-    F --> G[GitHub Pages]
-```
+![Architektur](images/Architektur.png)
 
 ## Abhängigkeiten
 
