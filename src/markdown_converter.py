@@ -42,7 +42,7 @@ def convert_file(md_file_path: Path, output_dir: str = "dist", navigation=None) 
         title=md_file_path.stem,
         navigation=navigation or [],
         current_page=md_file_path.stem,
-        version="2.0"
+        version="3.1"
     )
 
     output_file = output_dir / f"{md_file_path.stem}.html"
